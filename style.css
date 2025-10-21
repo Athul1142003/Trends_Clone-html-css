@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #f9f9f9;
+}
+nav{
+    background-color: black
+}
+.header{
+    background-color: black;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 28px;
+    list-style: none;
+}
+header a{
+    color: #e3dada;
+    text-decoration: none;
+    font-size: 19px;
+}
+#home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5; /* light background for contrast */
+  padding: 20px 0;
+}
+
+.home-container {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.home-banner {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Optional: navigation arrows */
+.home-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.home-container .prev {
+  left: 10px;
+}
+.home-container .next {
+  right: 10px;
+}
+/* Outer card container */
+.outer-card {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Background image */
+.store-bg {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+/* Inner card overlay */
+.inner-card {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 60%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.collection{
+    margin-top: 100px ;
+}
+/* Make sure each section is separated properly */
+section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* Collection Section */
+.collection {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 100px 0;   /* give space to make it visible */
+  position: relative;
+  z-index: 2;         /* put this above the video */
+}
+
+.collection h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #111;
+}
+.categories{
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+.categories a{
+    gap: 25px;
+    background-color: #e3dada;
+    text-decoration: none;
+    padding: 19px;
+    color: #111;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.picture-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.picture-container{
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+}
+.picture-container .groupimg{
+    width: 100%;
+    border-radius: 25px;
+}
+#brands {
+  background-color: white;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+  z-index: 3;   /* ensures it's above everything else */
+}
+
+#brands h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #111;
+}
+#brands {
+  background-color: white;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  z-index: 3;
+}
+
+#brands h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.brand-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-img {
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+footer {
+  background-color: #111;
+  color: #ddd;
+  padding: 50px 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 20px;
+}
+
+.footer-section h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 2px solid #e50914;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  color: #bbb;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e50914;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  font-size: 13px;
+  color: #999;
+}
